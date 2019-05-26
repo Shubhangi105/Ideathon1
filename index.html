@@ -6,12 +6,18 @@
 	<title>Resume-generator</title>
 	<style type="text/css">
 		.rows{
-			width:60%;
+			width:55%;
+			height:10%;
 		}
 		.column{
 			float:left;
 			width:50%;
 			padding:5px;
+		}
+		.right1{
+			float:bottom;
+			width:50%;
+			height:10px;
 		}
 		body{
 			background-color:grey;
@@ -23,7 +29,7 @@
 			margin-left:220px;
 			margin-top:40px;
 			height:560px;
-		}
+	}
 		.certi{
 			margin-left:420px;
 			margin-top:40px;
@@ -53,12 +59,26 @@
 	</div>
 	<div class="rows" >
 		<div class="column">
-				<img src="image.png" class="resumeimg">
+			
+				<img src="resume.jpg" class="resumeimg" onclick="goto()" style="height:600px">
 	
 		</div>
-		<div class="column">
-			<img src="caert.jpg" class="certi">
+		<div class="column right">
+			<img src="cert.png" class="certi" style="height:300px; margin-left:50px margin-bottom:0px">
+		</div>
+		<div class="column right">
+			<img src="certi.png" class="certi" style="height:280px; margin-bottom:40px;">
 		</div>
 	</div>
+
+	<script type="text/javascript">
+		function goto(){
+			let xhr = new XMLHtttpRequest();
+			xhr.open("GET", ,true);
+			xhr.send();
+		}
+
+
+	</script>
 </body>
 </html>
