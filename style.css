@@ -1,0 +1,33 @@
+#left{
+	position: relative;
+}
+
+#image{
+	position: absolute;
+	width:70px;
+	height:100px;
+	top: 32px;
+	left: 88px;
+}
+
+#right h1{
+	font-family: 'Oswald', sans-serif;
+	border-bottom:2px solid black;
+}
+
+}
+h2{
+		border-bottom:2px solid red;
+		margin-top: 101px;
+
+}
+#info{
+	position:absolute;
+	top:172px;
+	left:27px;
+}
+#skills{
+	margin-left: 20px;
+}
+	
+
