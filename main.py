@@ -249,27 +249,27 @@ def styleOfCertificate2(style):
 
 @app.route("/certificate/template1/styleMerit/finish", methods=['GET'])
 def finishMerit():
-    return render_template("", User2.query.get(name), User2.query.get(position), User2.query.get(event))
+    return render_template("", name=User2.query.get(name),position= User2.query.get(position), event=User2.query.get(event))
 
 @app.route("/certificate/template1/styleParticipation/finish", methods=['GET'])
 def finishParticipation():
-    return render_template("", User3.query.get(name), User3.query.get(event))
+    return render_template("", name= User3.query.get(name), event=User3.query.get(event))
 
 @app.route("/certificate/template1/styleCourse/finish", methods=['GET'])
 def finishCourse():
-    return render_template("", User4.query.get(name), User4.query.get(event), User2.query.get(marks))
+    return render_template("", name= User4.query.get(name), course=User4.query.get(course), marks=User2.query.get(marks))
 
 @app.route("/certificate/template2/styleMerit/finish", methods=['GET'])
 def finishMerit2():
-    return render_template("", User2.query.get(name), User2.query.get(position), User2.query.get(event))
+    return render_template("", name=User2.query.get(name), position=User2.query.get(position),event= User2.query.get(event))
 
 @app.route("/certificate/template2/styleParticipation/finish", methods=['GET'])
 def finishParticipation2():
-    return render_template("", User3.query.get(name), User3.query.get(event))
+    return render_template("",name= User3.query.get(name), event=User3.query.get(event))
 
 @app.route("/certificate/template2/styleCourse/finish", methods=['GET'])
 def finishCourse2():
-    return render_template("", User4.query.get(name), User4.query.get(event), User2.query.get(marks))
+    return render_template("", name=User4.query.get(name), course=User4.query.get(course), marks=User2.query.get(marks))
 
 
 
